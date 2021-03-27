@@ -53,7 +53,7 @@ elif inp == 1 :
   print ("4: LegionOS ")
   print ("5: Octavi OS")
   print("==================================================")
-  choice =  int(input("Enter your choice (number only) : ")
+  choice =  int(input("Enter your choice (number only) : "))
   rdir_name = input("enter the name of new directory : ")
   print("==================================================")
   print()
