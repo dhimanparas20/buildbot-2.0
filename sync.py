@@ -76,14 +76,15 @@ def tree (b,rdir):
   return(os.system("cd && cd " + rdir ))
   return(os.system("cd packages/apps/Settings/src/com/android/settings/ "))
   return(os.system("rm -rf AboutPhoneData.java "))
-  return(os.system("os.system("cd && cd " + rdir ))
+  return(os.system("cd && cd " + rdir ))
   return(os.system("cd buildbot "))
   return(os.system("cp AboutPhoneData.java /home/mst/${rdir}/packages/apps/Settings/src/com/android/settings"))
   return("-----------------------------------Issues Fixed ----------------------------------------------")
 os.system("cd && cd " + rdir )
   return (time.sleep(5))
   return ("Tree sync complete")
-  
+  
+
 
 
     
