@@ -15,7 +15,8 @@ def repo (inp,rdir):
     d = os.system("repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags")
     e = "--------------------------------------------------------------------------------------")
     f = time.sleep(5)
-    d = print("Repo Sync Complete ")
+    g = print("Repo Sync Complete ")
+    return ( a,b,c,d,e,f,g)
             
   
   elif inp == 2 :
@@ -62,28 +63,28 @@ def repo (inp,rdir):
 
 #syncing device trees
 def tree (b,rdir):
-  return (os.system("cd && cd " + rdir ))
-  return (os.system("git clone https://github.com/PixysOS-Devices/kernel_asus_sdm660.git -b eleven kernel/asus/sdm660"))
-  return (os.system("git clone https://github.com/dhimanparas20/vendor_asus.git -b 11 vendor/asus"))
-  return (os.system("git clone https://github.com/dhimanparas20/device_asus_sdm660-common.git -b 11 device/asus/sdm660-common"))
-  return (os.system("git clone https://github.com/dhimanparas20/device_asus_X00TD.git -b " + b + " device/asus/X00TD ")) 
-  return("----------------------------------------------------------------------------------------------------")
-  return("-----------------------------------Fixing issues ----------------------------------------------")
-  return("------------------------------------------------------------------------------------------------")
-  return(os.system("cd && cd " + rdir ))
-  return(os.system("rm -rf frameworks/base && rm -rf packages/apps/Settings && rm -rf packages/apps/OctaviLab && git clone -b 2.1 https://github.com/Octavi-Broken-Lab/frameworks_base.git frameworks/base && git clone -b 2.1 https://github.com/Octavi-Broken-Lab/android_packages_apps_Settings.git packages/apps/Settings && git clone -b 2.1 https://github.com/Octavi-Broken-Lab/android_packages_apps_OctaviLab.git packages/apps/OctaviLab "))
-  return(os.system("cd packages/apps/Settings/res/drawable/ "))
-  return(os.system("cp ic_device_x00td.png x00td.png "))
-  return(os.system("cd && cd " + rdir ))
-  return(os.system("cd packages/apps/Settings/src/com/android/settings/ "))
-  return(os.system("rm -rf AboutPhoneData.java "))
-  return(os.system("cd && cd " + rdir ))
-  return(os.system("cd buildbot "))
-  return(os.system("cp AboutPhoneData.java /home/mst/${rdir}/packages/apps/Settings/src/com/android/settings"))
-  return("-----------------------------------Issues Fixed ----------------------------------------------")
-  return(os.system("cd && cd " + rdir ))
-  return(time.sleep(5))
-  return("Tree sync complete")
+  return (os.system("cd && cd " + rdir )) ,
+  (os.system("git clone https://github.com/PixysOS-Devices/kernel_asus_sdm660.git -b eleven kernel/asus/sdm660")) ,
+  (os.system("git clone https://github.com/dhimanparas20/vendor_asus.git -b 11 vendor/asus")) ,
+  (os.system("git clone https://github.com/dhimanparas20/device_asus_sdm660-common.git -b 11 device/asus/sdm660-common")) ,
+  (os.system("git clone https://github.com/dhimanparas20/device_asus_X00TD.git -b " + b + " device/asus/X00TD ")) ,
+  ("----------------------------------------------------------------------------------------------------")
+#  return("-----------------------------------Fixing issues ----------------------------------------------")
+#  return("------------------------------------------------------------------------------------------------")
+#  return(os.system("cd && cd " + rdir ))
+#  return(os.system("rm -rf frameworks/base && rm -rf packages/apps/Settings && rm -rf packages/apps/OctaviLab && git clone -b 2.1 https://github.com/Octavi-Broken-Lab/frameworks_base.git frameworks/base && git clone -b 2.1 https://github.com/Octavi-Broken-Lab/android_packages_apps_Settings.git packages/apps/Settings && git clone -b 2.1 https://github.com/Octavi-Broken-Lab/android_packages_apps_OctaviLab.git packages/apps/OctaviLab "))
+#  return(os.system("cd packages/apps/Settings/res/drawable/ "))
+#  return(os.system("cp ic_device_x00td.png x00td.png "))
+#  return(os.system("cd && cd " + rdir ))
+#  return(os.system("cd packages/apps/Settings/src/com/android/settings/ "))
+#  return(os.system("rm -rf AboutPhoneData.java "))
+#  return(os.system("cd && cd " + rdir ))
+#  return(os.system("cd buildbot "))
+#  return(os.system("cp AboutPhoneData.java /home/mst/${rdir}/packages/apps/Settings/src/com/android/settings"))
+#  return("-----------------------------------Issues Fixed ----------------------------------------------")
+#  return(os.system("cd && cd " + rdir ))
+#  return(time.sleep(5))
+#  return("Tree sync complete")
   
 
 
