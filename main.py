@@ -35,7 +35,7 @@ time.sleep(3)
 #0- saving credentials
 if inp == 0 :
   os.system("git config --global credential.helper store")
-  printt()
+  print()
   print("-----------------------------------------------")
   print(" work done now exiting.... ")
   time.sleep(3)
