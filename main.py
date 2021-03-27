@@ -2,6 +2,7 @@ import os
 import time
 import sync
 
+os.system("clear")
 print("-----------------------------------------------------------------------------------------")
 print("--------------------WELCOME TO COMPILING SCRIPT BY MST PRODUCTIONS-----------------------")
 print("-----------------------------------------------------------------------------------------")
@@ -25,7 +26,7 @@ print("--------------------------------------------------")
 print()
 print()
 print("==================================================")
-input = int(input("Enter your choice :"))
+inp = int(input("Enter your choice :"))
 print("==================================================")
 print()
 print()
@@ -164,7 +165,7 @@ elif inp == 6:
   print ("4: LegionOS ")
   print ("5: Octavi OS")
   print("==================================================")
-  choice =  int(input("Enter your choice (number only) : ")
+  choice =  int(input("Enter your choice (number only) : "))
   rdir_name = input("enter the name of new directory : ")
   branch = input("Enter exact name of branch : ")
   print("==================================================")
