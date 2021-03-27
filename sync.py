@@ -9,13 +9,14 @@ def repo (inp,rdir):
   
   if inp == 1:
     #cherishos
-    return (os.system("cd"))
-    return(os.system("mkdir " + rdir + " && cd " + rdir))
-    return(os.system("repo init -u https://github.com/CherishOS/android_manifest.git -b eleven"))
-    return(os.system("repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"))
-    return("--------------------------------------------------------------------------------------")
-    return (time.sleep(5))
-    return("Repo Sync Complete ")
+    a =  os.system("cd")
+    b = os.system("mkdir " + rdir + " && cd " + rdir)
+    c = os.system("repo init -u https://github.com/CherishOS/android_manifest.git -b eleven")
+    d = os.system("repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags")
+    e = "--------------------------------------------------------------------------------------")
+    f = time.sleep(5)
+    d = print("Repo Sync Complete ")
+            
   
   elif inp == 2 :
     #Cr_Droid  
