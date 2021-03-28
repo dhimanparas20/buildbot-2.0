@@ -11,9 +11,9 @@ def repo (inp,rdir):
     #cherishos
     return(
       os.system("cd && mkdir "+ rdir + " && cd " + rdir + " && repo init -u https://github.com/CherishOS/android_manifest.git -b eleven"),
-      os.system("repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"),
+      os.system("cd  && cd " + rdir + " && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"),
       print("--------------------------------------------------------------------------------------"),
-      time.sleep(5),
+      time.sleep(3),
       print("Repo Sync Complete "))
     
   
@@ -21,9 +21,9 @@ def repo (inp,rdir):
     #Cr_Droid  
     return(
       os.system("cd && mkdir "+ rdir + " && cd " + rdir + " && repo init -u git://github.com/crdroidandroid/android.git -b 11.0"),
-      os.system("repo sync"),
+      os.system("cd  && cd " + rdir + " && repo sync"),
       print("--------------------------------------------------------------------------------------"),
-      time.sleep(5),
+      time.sleep(3),
       print("Repo Sync Complete "))
     
  
@@ -31,9 +31,9 @@ def repo (inp,rdir):
     #Dot-OS  
     return(
       os.system("cd && mkdir "+ rdir + " && cd " + rdir + " && repo init -u git://github.com/DotOS/manifest.git -b dot11"),
-      os.system("repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"),
+      os.system("cd  && cd " + rdir + " && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags"),
       print("--------------------------------------------------------------------------------------"),
-      time.sleep(5),
+      time.sleep(3),
       print("Repo Sync Complete "))
     
   
@@ -41,9 +41,9 @@ def repo (inp,rdir):
     #LegionOS  
     return(
       os.system("cd && mkdir "+ rdir + " && cd " + rdir + " && repo init --depth=1 -u https://github.com/Project-LegionOS/manifest.git -b 11"),
-      os.system("repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)"),
+      os.system("cd  && cd " + rdir + " && repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)"),
       print("--------------------------------------------------------------------------------------"),
-      time.sleep(5),
+      time.sleep(3),
       print("Repo Sync Complete "))    
     
   
@@ -51,9 +51,9 @@ def repo (inp,rdir):
     #Octavi-OS
     return(
       os.system("cd && mkdir "+ rdir + " && cd " + rdir + " && repo init -u https://github.com/Octavi-OS/platform_manifest.git -b 11"),
-      os.system("repo sync -c -f --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j16"),
+      os.system("cd  && cd " + rdir + " && repo sync -c -f --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j16"),
       print("--------------------------------------------------------------------------------------"),
-      time.sleep(5),
+      time.sleep(3),
       print("Repo Sync Complete "))       
     
  
@@ -69,7 +69,8 @@ def tree (b,rdir):
     print("------------------------------------------------------------------------------------------------"))
   
   
-  
+  
+
 
 
     
