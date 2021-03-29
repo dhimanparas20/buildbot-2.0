@@ -116,10 +116,17 @@ elif inp == 3 :
 
 #4- uploading the rom     
 elif inp == 4 : 
+  print("============================================================================")
   rdir_name = input("enter the name of directory : ")
+  print("==============================================================================")
+  print()
   os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X* && ls ")
+  print()
   print("----------------------------------------------------------------------------------")
+  print()
   name = input("paste the name of file you want to upload : ")
+  print("----------------------------------------------------------------------------------")
+  print()  
   print("--------------------------------uploading-----------------------------------------")
   print()
   os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X*  && rclone sync " + name + " gd: ")
