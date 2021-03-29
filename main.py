@@ -118,11 +118,14 @@ elif inp == 3 :
 elif inp == 4 : 
   rdir_name = input("enter the name of directory : ")
   os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X* && ls ")
+  print("----------------------------------------------------------------------------------")
   name = input("paste the name of file you want to upload : ")
-  os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X* && ls && rclone sync " + name + " gd: ")
-  print("-----------file uploaded-----------------")
+  print("--------------------------------uploading-----------------------------------------")
+  print()
+  os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X*  && rclone sync " + name + " gd: ")
+  print("---------------------------------file uploaded------------------------------------")
   print("exitind now ......")
-  time.sleep(3)
+  time.sleep(2)
   exit()  
   
 # 1,2 together
@@ -195,6 +198,8 @@ elif inp == 6:
   
   #3
   print("-----------------Starting Build------------------")
+  choice =  int(input("Enter your choice (number only) : "))
+  rdir_name = input("enter the name of directory : ")
   if choice == 1 :
     os.system("cd && cd buildbot && cp cherish.sh /home/mst/"+ rdir_name )
     os.system("cd && cd " + rdir_name + " && bash cherish.sh ")
@@ -219,16 +224,14 @@ elif inp == 6:
   print("----------------Starting Upload------------------")  
   
   #4
+  rdir_name = input("enter the name of directory : ")
   os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X* && ls ")
-  name = input("paste the name of file you want to upload : ")
-  os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X* && ls && rclone sync " + name + " gd: ")
-  print("-----------file uploaded-----------------")
+  print("--------------------------------uploading-----------------------------------------")
+  print()
+  os.system("cd && cd "+rdir_name +" && cd o*/t*/p*/X*  && rclone sync " + name + " gd: ")
+  print("---------------------------------file uploaded------------------------------------")
   print("exitind now ......")
-  time.sleep(3)
-  exit()
-  print("-----------file uploaded-----------------")
-  print("exitind now ......")
-  time.sleep(3)
+  time.sleep(2)
   exit()  
   
 else :
