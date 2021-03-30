@@ -10,8 +10,8 @@ def fix (rdir):
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/src/com/android/settings/ && rm -rf AboutPhoneData.java "),
     os.system("cp AboutPhoneData.java /home/mst/"+ rdir +"/packages/apps/Settings/src/com/android/settings"),
     print("-----------------------------------Private Repo Synced ----------------------------------------------"),
-    print("Now Run command again to build "))
-    print("exiting.................................")
+    print("Now Run command again to build "),
+    print("exiting................................."))
     time.sleep(3)
     clear()
     exit()
