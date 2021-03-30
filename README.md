@@ -18,6 +18,6 @@ cd && git clone https://github.com/dhimanparas20/buildbot.git && cd buildbot && 
 ```
 
 ```sh
-bash run.sh
+python3 run.py
 ```
 
