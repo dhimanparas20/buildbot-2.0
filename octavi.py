@@ -12,8 +12,8 @@ def fix (rdir):
     print("-----------------------------------Private Repo Synced ----------------------------------------------"),
     print("Now Run command again to build "),
     print("exiting................................."))
-    time.sleep(3)
-    clear()
-    exit()
+  time.sleep(3)
+  clear()
+  exit()
     
  
