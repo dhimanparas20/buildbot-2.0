@@ -57,7 +57,7 @@ elif inp == 1 :
   print()
   print("----------Work Done , Exiting ---------------")
   time.sleep(2)
- os.system("clear")
+  os.system("clear")
   exit()
  
 #2- sync the device trees 
