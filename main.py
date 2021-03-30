@@ -4,7 +4,7 @@ import sync
 import up 
 import octavi
 
-clear()
+os.system("clear")
 print("-----------------------------------------------------------------------------------------")
 print("-----------------------------------------------------------------------------------------")
 print("-----------------------------------------------------------------------------------------")
@@ -33,7 +33,7 @@ print("==================================================")
 inp = int(input("Enter your choice :"))
 print("==================================================")
 print()
-clear()
+os.system("clear")
 time.sleep(1)
 
 #0- saving credentials
@@ -57,7 +57,7 @@ elif inp == 1 :
   print()
   print("----------Work Done , Exiting ---------------")
   time.sleep(2)
-  clear()
+ os.system("clear")
   exit()
  
 #2- sync the device trees 
@@ -71,7 +71,7 @@ elif inp == 2 :
   print()
   print("----------Work Done , Exiting ---------------")
   time.sleep(2)
-  clear()
+  os.system("clear")
   exit()
 
 #3- compiling the rom 
@@ -119,7 +119,7 @@ elif inp == 4 :
   cho = int(input("enter where you want to upload : "))
   print("==================================================")
   print()
-  clear()
+  os.system("clear")
   if cho == 1 :
     print("-----------------------------------------------------------------------------")
     rdir_name = input("enter the name of working directory : ")
@@ -129,7 +129,7 @@ elif inp == 4 :
     print()
     print("-----------------------------------------------------------------------------")
     name = input("Enter the name of file: ")
-    clear()
+    os.system("clear")
     up.gd(rdir_name,name)
     
   elif cho == 2 :
@@ -143,5 +143,5 @@ elif inp == 4 :
     name = input("Enter the name of file: ")
     proj = input("Enter the name of project and location: ")
     print("-----------------------------------------------------------------------------")
-    clear
+    os.system("clear")
     up.sf(rdir_name,name,proj)
