@@ -13,7 +13,7 @@ def fix (rdir):
     print("Now Run command again to build "),
     print("exiting................................."))
   time.sleep(3)
-  clear()
+  os.system("clear")
   exit()
     
  
