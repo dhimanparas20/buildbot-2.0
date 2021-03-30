@@ -14,6 +14,10 @@ OS X & Linux:
 ```
 
 ```sh
+cd && git clone https://github.com/dhimanparas20/buildbot.git
+```
+
+```sh
 bash run.sh
 ```
 
