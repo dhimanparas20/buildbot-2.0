@@ -14,7 +14,7 @@ OS X & Linux:
 ```
 
 ```sh
-cd && git clone https://github.com/dhimanparas20/buildbot.git && cd buildbot
+cd && git clone https://github.com/dhimanparas20/buildbot.git && cd buildbot && chmod +x * && ls 
 ```
 
 ```sh
