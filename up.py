@@ -8,6 +8,16 @@ def gd (rdir_name,name):
   return(
     print("--------------------------------uploading-----------------------------------------"),
     os.system("cd && cd "+rdir_name+" && cd o*/t*/p*/X*  && rclone sync "+name+" gd: "),
+    print("││"),
+    print("││││"),
+    print("││││││"),
+    print("││││││││"),
+    print("││││││││││"),
+    print("││││││││││││"),
+    print("││││││││││││││"),
+    print("││││││││││││││││"),
+    print("││││││││││││││││││"),
+    print("││││││││││││││││││││"),
     print("---------------------------------file uploaded------------------------------------"),
     print("exitind now ......"),
     time.sleep(2),
@@ -19,9 +29,22 @@ def sf (rdir_name,name,proj):
     print("--------------------------------uploading-----------------------------------------"),
     print(),
     os.system("cd && cd "+rdir_name+" && cd o*/t*/p*/X* && scp "+name+" mst-2069@frs.sourceforge.net:/home/frs/project/"+proj ),
+    print("││"),
+    print("││││"),
+    print("││││││"),
+    print("││││││││"),
+    print("││││││││││"),
+    print("││││││││││││"),
+    print("││││││││││││││"),
+    print("││││││││││││││││"),
+    print("││││││││││││││││││"),
+    print("││││││││││││││││││││"),
     print("---------------------------------file uploaded------------------------------------"),
     print("exitind now ......"),
     time.sleep(2),
     exit())
-      
+
+
+
+  
     
