@@ -48,7 +48,7 @@ if inp == 0 :
 
 #1- sync the rom source  
 elif inp == 1 :
-  sync.disp()  ''' displays the rom choices '''
+  sync.disp()  
   choice =  int(input("Enter your choice (number only) : "))
   rdir_name = input("enter the name of new directory : ")
   print("==================================================")
