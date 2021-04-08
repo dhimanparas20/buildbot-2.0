@@ -91,7 +91,7 @@ def repo (inp,rdir):
 def tree (b,rdir):
   return(
     os.system("cd && cd " + rdir + " && git clone https://github.com/ElectroPerf/android_kernel_asus_sdm660.git -b X00TD kernel/asus/sdm660"),
-    os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/vendor_asus.git -b X00TD vendor/asus"),
+    os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/vendor_asus.git  X00TD vendor/asus"),
     os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/device_asus_sdm660-common.git  device/asus/sdm660-common"),
     os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/device_asus_X00TD.git -b " + b + " device/asus/X00TD "),
     print("------------------------------------------------------------------------------------------------"))
