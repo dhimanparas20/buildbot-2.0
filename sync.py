@@ -90,7 +90,7 @@ def repo (inp,rdir):
 #syncing device trees
 def tree (b,rdir):
   return(
-    os.system("cd && cd " + rdir + " && git clone https://github.com/ElectroPerf/android_kernel_asus_sdm660.git -b X00TD kernel/asus/sdm660"),
+    os.system("cd && cd " + rdir + " && git clone https://github.com/ElectroPerf/android_kernel_asus_sdm660.git kernel/asus/sdm660"),
     print("--------------------------------------------------------------------------------------"),
     os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/vendor-asus.git vendor/asus "),
     print("--------------------------------------------------------------------------------------"),
