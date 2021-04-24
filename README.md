@@ -8,7 +8,7 @@ So this script basically saves alot of time . It can sync rom repo , sync device
 OS X & Linux:
 
 ```sh
-# clone the repo to rootfir 
+# clone the repo to rootdir 
 ```
 
 ```sh
