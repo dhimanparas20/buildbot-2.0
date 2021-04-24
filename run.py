@@ -3,6 +3,7 @@ import time
 import sync
 import up 
 import octavi
+import compile
 
 os.system("clear")
 print("#-----------------------------------------------------------------------------------------#")
@@ -76,38 +77,25 @@ elif inp == 2 :
 
 #3- compiling the rom 
 elif inp == 3 :
-  sync.opt()
+  sync.disp()  
   choice =  int(input("Enter your choice (number only) : "))
   rdir_name = input("enter the name of directory : ")
-  print("==================================================")
-  if choice == 1 :
-    os.system("cd && cd buildbot && cp cherish.sh /home/mst/"+ rdir_name )
-    '''os.system("cd && cd " + rdir_name + " && bash cherish.sh ")'''
-  elif choice == 2 :
-    os.system("cd && cd buildbot && cp cr.sh /home/mst/"+ rdir_name )
-    '''os.system("cd && cd " + rdir_name + " && bash cr.sh ")'''
-  elif choice == 3 :
-    os.system("cd && cd buildbot && cp dot.sh /home/mst/"+ rdir_name )
-    '''os.system("cd && cd " + rdir_name + " && bash dot.sh ")'''
-  elif choice == 4 :
-    os.system("cd && cd buildbot && cp legion.sh /home/mst/"+ rdir_name )
-    '''os.system("cd && cd " + rdir_name + " && bash legion.sh ")'''
-  elif choice == 5 :
-    inp = input("Do you wante to sync Private repo ? type (Y/N) : ") 
-    if inp == "y" or inp == "Y" :
-      octavi.fix(rdir_name)
-    elif inp == "n"  or inp == "N" :
-      os.system("cd && cd buildbot && cp octavi.sh /home/mst/"+ rdir_name )
-      '''os.system("cd && cd " + rdir_name + " && bash octavi.sh ")'''
-    else :
-     time.sleep(1)
-     print("invalid input")
-     time.sleep(1)
-     print("exiting")
-     time.sleep(2)
-     exit()
+  if choice == 4 :
+    inp = input("Do you want to sync octavi private source? type (y/n): " )
+    print("==================================================")
+    print()
+    compile.run(choice,rdir_name,inp)
+    print("--------------------------------------------------------------------------------------------")
+    os.system("cd %% cd rdir_name && cd out/t*/p*/X00TD && ls ")
+    print("--------------------------------------------------------------------------------------------")
+  else:  
+    print("==================================================")
+    print()
+    compile.run(choice,rdir_name)
+    print("--------------------------------------------------------------------------------------------")
+    os.system("cd %% cd rdir_name && cd out/t*/p*/X00TD && ls ")
+    print("--------------------------------------------------------------------------------------------")
       
-
 #4- uploading the rom     
 elif inp == 4 :
   print ("------------------------------------------------")
