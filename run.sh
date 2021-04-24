@@ -1,3 +1,3 @@
 echo starting...
-sleep(2)
+sleep 2
 python3 go.py
