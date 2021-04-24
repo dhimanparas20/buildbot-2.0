@@ -78,7 +78,7 @@ elif inp == 2 :
 
 #3- compiling the rom 
 elif inp == 3 :
-  sync.disp()  
+  sync.opt()  
   choice =  int(input("Enter your choice (number only) : "))
   rdir_name = input("enter the name of directory : ")
   if choice == 4 :
