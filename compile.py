@@ -3,7 +3,6 @@ import os
 import sync 
 
 def run(choice,rdir_name,inp):
-  sync.opt()
   print("==================================================")
   if choice == 1 :
     return(
