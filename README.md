@@ -14,10 +14,18 @@ OS X & Linux:
 ```
 
 ```sh
-cd && git clone https://github.com/dhimanparas20/buildbot.git && cd buildbot && chmod +x * && clear && ls 
+cd && git clone https://github.com/dhimanparas20/buildbot.git 
 ```
 
 ```sh
-python3 run.py
+cd buildbot
+```
+
+```sh
+chmod +x *  && clear && ls
+```
+
+```sh
+bash run.sh
 ```
 
