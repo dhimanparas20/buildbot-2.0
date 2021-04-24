@@ -3,8 +3,6 @@
 
 So this script basically saves alot of time . It can sync rom repo , sync device trees , compile rom and upload it to gd or sf and alot more ....
 
-![](596856.jpg)
-
 ## Installation
 
 OS X & Linux:
