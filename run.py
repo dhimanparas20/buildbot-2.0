@@ -2,8 +2,9 @@ import os
 import time
 import sync
 import up 
-import octavi
 import compile
+import octavi
+
 
 os.system("clear")
 print("#-----------------------------------------------------------------------------------------#")
