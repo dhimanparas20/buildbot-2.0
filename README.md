@@ -19,9 +19,9 @@ So to make this script is compatible with your environment , you need to do some
 
 > 7: up.py (dit sf project name , also to upload in gd , you must configur rclone beforehand )
 
-## Installation
+## Installation and Running 
 
-OS X & Linux:
+Linux:
 
 
 ```sh
@@ -37,7 +37,11 @@ cd buildbot && chmod +x *  && clear && ls
 ```
 
 ## Notes
-dont use this script if you hav 0 knowldge about python and bash
-dont be a gey by copying or cloning this repo and calling it yours
-if you likd the script or need any kind of help ping me up  https://t.me/ken_kaneki_69
+Dont use this script if you hav 0 knowldge about python and bash .
+
+Dont be a gey by copying or cloning this repo and calling it yours .
+
+If you liked the script or need any kind of help , ping me up  https://t.me/ken_kaneki_69
+
+Im not responsible for any of your data losses , do it at your own will .
 
