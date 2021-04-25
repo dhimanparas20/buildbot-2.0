@@ -47,4 +47,4 @@ Im not responsible for any of your data losses , do it at your own will .
 
 ## Just a cool image
 <p align="center">
-<img src="https://github.com/dhimanparas20/buildbot/blob/main/t_video6062339814248678155.mp4" />
+<img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
