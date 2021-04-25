@@ -1,7 +1,10 @@
 # BuildBot
 > does everything for me
-
 So this script basically saves alot of time . It can sync rom repo , sync device trees , compile rom and upload it to gd or sf and alot more ....
+
+## BAnner
+<p align="center">
+<img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
 
 ## Files to edit 
 So to make this script is compatible with your environment , you need to do some basic python editing 
@@ -45,6 +48,4 @@ If you liked the script or need any kind of help , ping me up  https://t.me/ken_
 
 Im not responsible for any of your data losses , do it at your own will .
 
-## Just a cool image
-<p align="center">
-<img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
+
