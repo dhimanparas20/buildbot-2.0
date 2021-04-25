@@ -1,6 +1,7 @@
 # python script just to sync private trees for octavi os
 import os
 import time
+import octavi
 
 def fix (rdir_name):
   return(
