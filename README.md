@@ -3,7 +3,7 @@
 
 So this script basically saves alot of time . It can sync rom repo , sync device trees , compile rom and upload it to gd or sf and alot more ....
 
-## BAnner
+## Banner
 <p align="center">
 <img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
 
