@@ -45,3 +45,6 @@ If you liked the script or need any kind of help , ping me up  https://t.me/ken_
 
 Im not responsible for any of your data losses , do it at your own will .
 
+## Just a cool image
+<p align="center">
+<img src="https://t.me/mst_uploads_X00T/406" />
