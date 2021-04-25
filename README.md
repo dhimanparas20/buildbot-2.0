@@ -7,23 +7,16 @@ So this script basically saves alot of time . It can sync rom repo , sync device
 
 OS X & Linux:
 
-```sh
-# clone the repo to rootdir 
-```
 
 ```sh
 cd && git clone https://github.com/dhimanparas20/buildbot.git 
 ```
 
 ```sh
-cd buildbot
+cd buildbot && chmod +x *  && clear && ls
 ```
 
 ```sh
-chmod +x *  && clear && ls
-```
-
-```sh
-bash run.sh
+./run.sh
 ```
 
