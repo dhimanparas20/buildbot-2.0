@@ -36,3 +36,8 @@ cd buildbot && chmod +x *  && clear && ls
 ./run.sh
 ```
 
+## Notes
+dont use this script if you hav 0 knowldge about python and bash
+dont be a gey by copying or cloning this repo and calling it yours
+if you likd the script or need any kind of help ping me up  https://t.me/ken_kaneki_69
+
