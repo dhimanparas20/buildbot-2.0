@@ -21,7 +21,7 @@ So to make this script is compatible with your environment , you need to do some
 
 > 6: sync.py (edit rom names , sync and init commands and tree links )
 
-> 7: up.py (dit sf project name , also to upload in gd , you must configur rclone beforehand )
+> 7: up.py (edit sf project name , also to upload in gd , you must configur rclone beforehand )
 
 ## Installation and Running 
 
