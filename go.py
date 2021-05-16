@@ -65,11 +65,12 @@ elif inp == 1 :
 #2- sync the device trees 
 elif inp == 2 :
   print("==================================================") 
+  opt = input("Do you want to sync new trees?(Y or N): ")
   branch = input("Enter exact name of github branch : ")
   rdir_name = input("enter the name of directory : ")
   print("==================================================")  
   print()
-  sync.tree(branch,rdir_name)
+  sync.tree(opt,branch,rdir_name)
   print()
   print("----------Work Done , Exiting ---------------")
   time.sleep(2)
