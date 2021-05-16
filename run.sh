@@ -1,3 +1,4 @@
-echo starting...
-sleep 2
+echo starting... 
+ehco :-)
+sleep 1
 python3 go.py
