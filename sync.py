@@ -79,6 +79,7 @@ def repo (inp,rdir):
 def tree (opt,b,rdir):
   if opt == 'N' or opt == 'n':
     return(
+      print("/////////////////////////////===CLONING OLD TREES===////////////////////////////////////"),
       os.system("cd && cd " + rdir + " && git clone https://github.com/ElectroPerf/android_kernel_asus_sdm660.git -b X00TD-P-WIFI-STABLE kernel/asus/sdm660"),
       print("--------------------------------------------------------------------------------------"), 
       os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/vendor-asus.git vendor/asus "),
@@ -90,6 +91,7 @@ def tree (opt,b,rdir):
       
   elif opt == "Y" or opt == "y":
     return(
+      print("/////////////////////////////===CLONING NEW TREES===////////////////////////////////////"),
       os.system("cd && cd " + rdir + " && git clone https://github.com/ElectroPerf/android_kernel_asus_sdm660.git -b X00TD-P-WIFI-STABLE kernel/asus/sdm660"),
       print("--------------------------------------------------------------------------------------"), 
       os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/nvt.git vendor/asus "),
