@@ -1,4 +1,4 @@
 echo starting... 
-ehco ":-)"
+echo ":-)"
 sleep 1
 python3 go.py
