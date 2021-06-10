@@ -94,9 +94,9 @@ def tree (opt,b,rdir):
       print("/////////////////////////////===CLONING NEW TREES===////////////////////////////////////"),
       os.system("cd && cd " + rdir + " && git clone https://github.com/ElectroPerf/android_kernel_asus_sdm660-LTO.git -b X00TD-P-WIFI-STABLE kernel/asus/sdm660"),
       print("--------------------------------------------------------------------------------------"), 
-      os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/nvt.git vendor/asus "),
+      os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/vendor-asus.git vendor/asus "),
       print("--------------------------------------------------------------------------------------"),
       os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/cdt.git device/asus/sdm660-common"),
       print("--------------------------------------------------------------------------------------"),
-      os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/dt.git -b " + b + " device/asus/X00TD "),
+      os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/device-asus-X00TD.git -b " + b + " device/asus/X00TD "),
       print("------------------------------------------------------------------------------------------------"))
