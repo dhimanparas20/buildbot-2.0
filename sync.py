@@ -86,7 +86,7 @@ def tree (opt,b,rdir):
       print("--------------------------------------------------------------------------------------"),
       os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/device_asus_sdm660-common.git device/asus/sdm660-common"),
       print("--------------------------------------------------------------------------------------"),
-      os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/device_asus_X00TD.git -b " + b + " device/asus/X00TD "),
+      os.system("cd && cd " + rdir + " && git clone https://github.com/dhimanparas20/device-asus-X00TD.git -b " + b + " device/asus/X00TD "),
       print("------------------------------------------------------------------------------------------------"))
       
   elif opt == "Y" or opt == "y":
