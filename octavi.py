@@ -10,7 +10,7 @@ def fix (rdir_name):
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/res/drawable/ && rm -rf ic_device_x00td.png "),
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/res/drawable/ && cp daisy.png x00td.png && cp daisy.png ic_device_x00td.png "),     
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/src/com/android/settings/ && rm -rf AboutPhoneData.java "),
-    os.system("cp AboutPhoneData.java /home/mst/"+rdir_name+"/packages/apps/Settings/src/com/android/settings"),
+    os.system("cp AboutPhoneData.java /home/ubuntu/"+rdir_name+"/packages/apps/Settings/src/com/android/settings"),
     print("-----------------------------------Private Repo Synced ----------------------------------------------"),
     print(),
     print("exiting................................."))
