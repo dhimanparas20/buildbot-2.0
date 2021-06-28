@@ -87,7 +87,7 @@ elif inp == 3 :
     print("==================================================")
     print()
     compile.run(choice,rdir_name,inp)
-    else:  
+  else:  
     print("==================================================")
     print()
     compile.run(choice,rdir_name)
@@ -95,7 +95,7 @@ elif inp == 3 :
 #4- uploading the rom     
 elif inp == 4 :
   print ("------------------------------------------------")
-  print ("            Choose rom Choice to upload          ")
+  print ("            Available Options          ")
   print ("------------------------------------------------")
   print ("1: Gdrive")
   print ("2: Source Forge ")
