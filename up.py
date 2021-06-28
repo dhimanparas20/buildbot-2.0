@@ -6,8 +6,8 @@ import time
 
 def gd (rdir_name,name):
   return(
-    print("--------------------------------uploading-----------------------------------------"),
-    os.system("cd && cd "+rdir_name+" && cd o*/t*/p*/X*  && rclone sync "+name+" gd: "),
+    print("--------------------------------uploading to Gdrive-----------------------------------------"),
+    os.system("cd && cd "+rdir_name+" && cd out*/t*/p*/X*  && rclone sync "+name+" gd: "),
     print("││"),
     print("││││"),
     print("││││││"),
@@ -19,16 +19,16 @@ def gd (rdir_name,name):
     print("││││││││││││││││││"),
     print("││││││││││││││││││││"),
     print("---------------------------------file uploaded------------------------------------"),
-    print("exitind now ......"),
-    time.sleep(2),
+    print("exiting now ......"),
+    time.sleep(1),
     exit())
  
  
 def sf (rdir_name,name,proj):
   return(
-    print("--------------------------------uploading-----------------------------------------"),
+    print("--------------------------------uploading to SF-----------------------------------------"),
     print(),
-    os.system("cd && cd "+rdir_name+" && cd o*/t*/p*/X* && scp "+name+" mst-2069@frs.sourceforge.net:/home/frs/project/"+proj ),
+    os.system("cd && cd "+rdir_name+" && cd out*/t*/p*/X* && scp "+name+" mst-2069@frs.sourceforge.net:/home/frs/project/"+proj ),
     print("││"),
     print("││││"),
     print("││││││"),
@@ -40,8 +40,8 @@ def sf (rdir_name,name,proj):
     print("││││││││││││││││││"),
     print("││││││││││││││││││││"),
     print("---------------------------------file uploaded------------------------------------"),
-    print("exitind now ......"),
-    time.sleep(2),
+    print("exiting now ......"),
+    time.sleep(1),
     exit())
 
 
