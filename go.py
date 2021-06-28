@@ -65,10 +65,10 @@ elif inp == 1 :
 #2- sync the device trees 
 elif inp == 2 :
   print("==================================================") 
-  opt = input("Do you want to sync new trees?(Y or N): ")
-  rdir_name = input("enter the name of working directory: ")
   octa = input("Do you want to sync octavi trees and priavte repo? (Y or N): ")
   if octa == "n" or octa == "N" :
+    opt = input("Do you want to sync new trees?(Y or N): ")
+    rdir_name = input("enter the name of working directory: ")
     branch = input("Enter exact name of github branch (cr,cherish,octavi): ")
     print("==================================================")  
     print()
@@ -78,9 +78,12 @@ elif inp == 2 :
     time.sleep(2)
     os.system("cd && cd " + rdir_name + " && ls " )
   elif octa == "Y" or octa == "Y" : 
+    rdir_name = input("enter the name of working directory: ")
     octavi.fix(rdir_name)  
     time.sleep(2)
     os.system("cd && cd " + rdir_name + " && ls " )   
+  else :
+    print("wrong choice ")
          
 #3- compiling the rom 
 elif inp == 3 :
