@@ -4,6 +4,7 @@ import sync
 import up 
 import compile
 import octavi
+import code
 
 
 os.system("clear")
@@ -30,7 +31,7 @@ print ("1: sync Rom Repo")
 print ("2: sync Device Trees ")
 print ("3: Compile rom ")
 print ("4: Upload rom to GD or SF ")
-print ("press any other key to exit :") 
+print ("99: exit the code ")
 print("==================================================")
 inp = int(input("Enter your choice :"))
 print("==================================================")
@@ -43,10 +44,9 @@ if inp == 0 :
   print("-----------------------------------------------")
   os.system("git config --global credential.helper store")
   print()
-  print("-----------------------------------------------")
-  print(" work done now exiting.... ")
-  time.sleep(3)
-  exit()
+  print("-----------------WORK DONE---------------------")
+  time.sleep(1)
+  code.loop()
 
 #1- sync the rom source  
 elif inp == 1 :
@@ -57,10 +57,9 @@ elif inp == 1 :
   print()
   sync.repo(choice,rdir_name)
   print()
-  print("----------Work Done , Exiting ---------------")
-  time.sleep(2)
-  os.system("clear")
-  exit()
+  time.sleep(1)
+  code.loop()
+  
  
 #2- sync the device trees 
 elif inp == 2 :
@@ -74,17 +73,17 @@ elif inp == 2 :
     print()
     sync.tree(opt,branch,rdir_name)
     print()
-    print("----------Work Done , Exiting ---------------")
-    time.sleep(2)
-    os.system("cd && cd " + rdir_name + " && ls " )
+    time.sleep(1)
+    code.home(rdir_name)
   elif octa == "y" or octa == "Y" : 
-    rdir_name = input("enter the name of working directory: ")
+    rdir_name = input("enter the name of working OctaviOS directory: ")
     octavi.fix(rdir_name)  
-    time.sleep(2)
-    os.system("cd && cd " + rdir_name + " && ls " )   
+    time.sleep(1)
+    code.home(rdir_name)   
   else :
     print("wrong choice ")
-         
+    code.loop()
+           
 #3- compiling the rom 
 elif inp == 3 :
   sync.opt()  
@@ -95,10 +94,12 @@ elif inp == 3 :
     print("==================================================")
     print()
     compile.run(choice,rdir_name,inp)
+    code.loop()
   else:  
     print("==================================================")
     print()
     compile.run(choice,rdir_name)
+    code.loop()
           
 #4- uploading the rom     
 elif inp == 4 :
@@ -123,6 +124,7 @@ elif inp == 4 :
     name = input("Enter the name of file: ")
     os.system("clear")
     up.gd(rdir_name,name)
+    code.loop()
     
   elif cho == 2 :
     print("-----------------------------------------------------------------------------")
@@ -137,3 +139,13 @@ elif inp == 4 :
     print("-----------------------------------------------------------------------------")
     os.system("clear")
     up.sf(rdir_name,name,proj)
+    code.loop()
+    
+# Exit
+elif inp == 99 :
+  code.exit()
+
+# Wrong_Input
+else :
+  print("---------------WRONG INPUT------------------")
+  code.loop()  
