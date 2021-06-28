@@ -77,7 +77,7 @@ elif inp == 2 :
     print("----------Work Done , Exiting ---------------")
     time.sleep(2)
     os.system("cd && cd " + rdir_name + " && ls " )
-  elif octa == "Y" or octa == "Y" : 
+  elif octa == "y" or octa == "Y" : 
     rdir_name = input("enter the name of working directory: ")
     octavi.fix(rdir_name)  
     time.sleep(2)
