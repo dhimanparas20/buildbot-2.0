@@ -66,17 +66,22 @@ elif inp == 1 :
 elif inp == 2 :
   print("==================================================") 
   opt = input("Do you want to sync new trees?(Y or N): ")
-  branch = input("Enter exact name of github branch : ")
-  rdir_name = input("enter the name of directory : ")
-  print("==================================================")  
-  print()
-  sync.tree(opt,branch,rdir_name)
-  print()
-  print("----------Work Done , Exiting ---------------")
-  time.sleep(2)
-  os.system("clear")
-  exit()
-
+  rdir_name = input("enter the name of working directory: ")
+  octa = input("Do you want to sync octavi trees and priavte repo? (Y or N): ")
+  if octa == "n" or octa == "N" :
+    branch = input("Enter exact name of github branch (cr,cherish,octavi): ")
+    print("==================================================")  
+    print()
+    sync.tree(opt,branch,rdir_name)
+    print()
+    print("----------Work Done , Exiting ---------------")
+    time.sleep(2)
+    os.system("cd && cd " + rdir_name + " && ls " )
+  elif octa == "Y" or octa == "Y" : 
+    octavi.fix(rdir_name)  
+    time.sleep(2)
+    os.system("cd && cd " + rdir_name + " && ls " )   
+         
 #3- compiling the rom 
 elif inp == 3 :
   sync.opt()  
