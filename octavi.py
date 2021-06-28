@@ -23,7 +23,6 @@ def fix (rdir_name):
     print(),
     print("exiting................................."))
   time.sleep(2)
-  os.system("clear")
   exit()
     
  
