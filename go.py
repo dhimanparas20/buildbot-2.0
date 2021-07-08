@@ -2,9 +2,9 @@ import os
 import time
 import sync
 import up 
-import compile
 import octavi
 import code
+import vars
 
 
 os.system("clear")
@@ -29,8 +29,7 @@ print ("------------------------------------------------")
 print ("0: Save Github credentials ")
 print ("1: sync Rom Repo")
 print ("2: sync Device Trees ")
-print ("3: Compile rom ")
-print ("4: Upload rom to GD or SF ")
+print ("3: Upload rom to GD or SF ")
 print ("99: exit the code ")
 print("==================================================")
 inp = int(input("Enter your choice :"))
@@ -68,7 +67,7 @@ elif inp == 2 :
   if octa == "n" or octa == "N" :
     opt = input("Do you want to sync new trees?(Y or N): ")
     rdir_name = input("enter the name of working directory: ")
-    branch = input("Enter exact name of github branch (cr,cherish,octavi): ")
+    branch = input("Enter exact name of github branch: ")
     print("==================================================")  
     print()
     sync.tree(opt,branch,rdir_name)
@@ -84,25 +83,8 @@ elif inp == 2 :
     print("wrong choice ")
     code.loop()
            
-#3- compiling the rom 
+#3- uploading the rom     
 elif inp == 3 :
-  sync.opt()  
-  choice =  int(input("Enter your choice (number only) : "))
-  rdir_name = input("enter the name of directory : ")
-  if choice == 4 :
-    inp = input("Do you want to sync octavi private source? type (y/n): " )
-    print("==================================================")
-    print()
-    compile.run(choice,rdir_name,inp)
-    code.loop()
-  else:  
-    print("==================================================")
-    print()
-    compile.run(choice,rdir_name)
-    code.loop()
-          
-#4- uploading the rom     
-elif inp == 4 :
   print ("------------------------------------------------")
   print ("            Available Options          ")
   print ("------------------------------------------------")
@@ -118,7 +100,7 @@ elif inp == 4 :
     rdir_name = input("enter the name of working directory : ")
     print("-----------------------------------------------------------------------------")
     print()
-    os.system("cd && cd "+rdir_name+" && cd o*/t*/p*/X* && ls ")
+    os.system("cd && cd "+rdir_name+" && cd " +vars.OUT+ "&& ls")
     print()
     print("-----------------------------------------------------------------------------")
     name = input("Enter the name of file: ")
@@ -131,7 +113,7 @@ elif inp == 4 :
     rdir_name = input("enter the name of working directory : ")
     print("-----------------------------------------------------------------------------")
     print()
-    os.system("cd && cd "+rdir_name+" && cd o*/t*/p*/X* && ls ")
+    os.system("cd && cd "+rdir_name+" && cd " +vars.OUT+ "&& ls")
     print()
     print("-----------------------------------------------------------------------------")
     name = input("Enter the name of file: ")
