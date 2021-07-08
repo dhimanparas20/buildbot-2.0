@@ -63,14 +63,14 @@ elif inp == 1 :
 #2- sync the device trees 
 elif inp == 2 :
   print("==================================================") 
-    rdir_name = input("enter the name of working directory: ")
-    branch = input("Enter exact name of github branch: ")
-    print("==================================================")  
-    print()
-    sync.tree(branch,rdir_name)
-    print()
-    time.sleep(1)
-    code.home(rdir_name)
+  rdir_name = input("enter the name of working directory: ")
+  branch = input("Enter exact name of github branch: ")
+  print("==================================================")  
+  print()
+  sync.tree(branch,rdir_name)
+  print()
+  time.sleep(1)
+  code.home(rdir_name)
  
   else :
     print("wrong choice ")
