@@ -71,11 +71,7 @@ elif inp == 2 :
   print()
   time.sleep(1)
   code.home(rdir_name)
- 
-  else :
-    print("wrong choice ")
-    code.loop()
-           
+
 #3- uploading the rom     
 elif inp == 3 :
   print ("------------------------------------------------")
