@@ -63,22 +63,15 @@ elif inp == 1 :
 #2- sync the device trees 
 elif inp == 2 :
   print("==================================================") 
-  octa = input("Do you want to sync octavi trees and priavte repo? (Y or N): ")
-  if octa == "n" or octa == "N" :
-    opt = input("Do you want to sync new trees?(Y or N): ")
     rdir_name = input("enter the name of working directory: ")
     branch = input("Enter exact name of github branch: ")
     print("==================================================")  
     print()
-    sync.tree(opt,branch,rdir_name)
+    sync.tree(branch,rdir_name)
     print()
     time.sleep(1)
     code.home(rdir_name)
-  elif octa == "y" or octa == "Y" : 
-    rdir_name = input("enter the name of working OctaviOS directory: ")
-    octavi.fix(rdir_name)  
-    time.sleep(1)
-    code.home(rdir_name)   
+ 
   else :
     print("wrong choice ")
     code.loop()
@@ -130,4 +123,4 @@ elif inp == 99 :
 # Wrong_Input
 else :
   print("---------------WRONG INPUT------------------")
-  code.loop()  
+  code.loop()
