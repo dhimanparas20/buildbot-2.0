@@ -2,6 +2,7 @@
 import os
 import time
 import octavi
+import vars
 
 def fix (rdir_name):
   return(
@@ -11,7 +12,7 @@ def fix (rdir_name):
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/res/drawable/ && rm -rf ic_device_x00td.png "),
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/res/drawable/ && cp daisy.png x00td.png && cp daisy.png ic_device_x00td.png "),     
     os.system("cd && cd " + rdir_name + " && cd packages/apps/Settings/src/com/android/settings/ && rm -rf AboutPhoneData.java "),
-    os.system("cp AboutPhoneData.java /home/mst/"+rdir_name+"/packages/apps/Settings/src/com/android/settings/"),
+    os.system("cp AboutPhoneData.java /home/"+vars.SERVER_NAME+"/"+rdir_name+"/packages/apps/Settings/src/com/android/settings/"),
     print(),
     print("-----------------------------------Syncing Private trees---------------------------------------------"),
     print(),
@@ -24,5 +25,3 @@ def fix (rdir_name):
     print("exiting................................."))
   time.sleep(2)
   exit()
-    
- 
