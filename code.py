@@ -1,5 +1,4 @@
 # python function to exit or loop the whole code
-
 import os
 import time
 
@@ -38,6 +37,4 @@ def ask (opt) :
       
 def home (rdir) :
   return(
-    os.system("cd && cd " + rdir + " && ls "))   
-      
-      
+    os.system("cd && cd " + rdir + " && ls "))
