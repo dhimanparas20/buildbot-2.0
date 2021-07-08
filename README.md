@@ -1,39 +1,28 @@
 # BuildBot
-> does everything for me
+> does everything for YOU
 
-So this script basically saves alot of time . It can sync rom repo , sync device trees , compile rom and upload it to gd or sf and alot more ....
+So this script basically saves alot of time . It can sync rom repo , sync device trees , and upload it to gd or sf and alot more ....
+No more time wasting for typing those commands .
 
 ## Banner
 <p align="center">
 <img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
 
 ## Files to edit 
-So to make this script is compatible with your environment , you need to do some basic python editing 
-> 1: AboutPhoneData.java (only edit this if you are making octavi os )
-
-> 2: romname.sh (edit the name and build commands according your needs and environment )
-
-> 3: compile.py (just replace romname.sh with yours and server name , incase mine is "mst" )
-
-> 4: go.py (the main script , you must have good python knowledge to edit this )
-
-> 5: octavi.py (only edit this if you have acess to private trees , rename the device image in drawables )
-
-> 6: sync.py (edit rom names , sync and init commands and tree links )
-
-> 7: up.py (edit sf project name , also to upload in gd , you must configur rclone beforehand )
+So to make this script is compatible with your environment , you just need to edit one file .  
+> Open "vars.py" using any text editor and then fill all the variables according to your environment .
+> Few will be alredy done by me for reference, so you can just remove them and replace them with yours .
 
 ## Installation and Running 
 
 Linux:
 
-
 ```sh
-cd && git clone https://github.com/dhimanparas20/buildbot.git 
+cd && git clone https://github.com/dhimanparas20/buildbot-2.0.git 
 ```
 
 ```sh
-cd buildbot && chmod +x *  && clear && ls
+cd buildbot* && chmod +x *  && clear && ls
 ```
 
 ```sh
@@ -41,12 +30,12 @@ cd buildbot && chmod +x *  && clear && ls
 ```
 
 ## Notes
-Dont use this script if you hav 0 knowldge about python and bash .
+Dont edit this script if you hav 0 knowledge about python and bash .
 
-Dont be a gey by copying or cloning this repo and calling it yours .
+Dont be a gey by copying or importing this repo and calling it yours .
+  
+Any changes for betterment are welcome,  
 
 If you liked the script or need any kind of help , ping me up  https://t.me/ken_kaneki_69
 
 Im not responsible for any of your data losses , do it at your own will .
-
-
