@@ -6,7 +6,7 @@ No more time wasting for typing those commands .
 
 ## Banner
 <p align="center">
-<img src="https://github.com/dhimanparas20/buildbot/blob/main/mst.jpg" />
+<img src="https://github.com/dhimanparas20/buildbot-2.0/blob/main/mst.jpg" />
 
 ## Files to edit 
 So to make this script is compatible with your environment , you just need to edit one file .  
