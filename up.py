@@ -3,11 +3,12 @@
 
 import os
 import time
+import vars
 
 def gd (rdir_name,name):
   return(
     print("--------------------------------uploading to Gdrive-----------------------------------------"),
-    os.system("cd && cd "+rdir_name+" && cd out*/t*/p*/X*  && rclone sync "+name+" gd: "),
+    os.system("cd && cd "+rdir_name+" && cd " +vars.OUT+ " && rclone sync "+name+ " " +vars.RC),
     print("││"),
     print("││││"),
     print("││││││"),
@@ -28,7 +29,7 @@ def sf (rdir_name,name,proj):
   return(
     print("--------------------------------uploading to SF-----------------------------------------"),
     print(),
-    os.system("cd && cd "+rdir_name+" && cd out*/t*/p*/X* && scp "+name+" mst-2069@frs.sourceforge.net:/home/frs/project/"+proj ),
+    os.system("cd && cd "+rdir_name+" && cd "+vars.OUT+" &&ls &&  scp "+name+" "+vars.SF+proj ),
     print("││"),
     print("││││"),
     print("││││││"),
@@ -43,8 +44,3 @@ def sf (rdir_name,name,proj):
     print("exiting now ......"),
     time.sleep(1),
     exit())
-
-
-
-  
-    
