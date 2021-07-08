@@ -2,7 +2,6 @@ import os
 import time
 import sync
 import up 
-import octavi
 import code
 import vars
 
