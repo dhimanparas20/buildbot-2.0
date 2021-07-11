@@ -29,6 +29,7 @@ print ("0: Save Github credentials ")
 print ("1: sync Rom Repo")
 print ("2: sync Device Trees ")
 print ("3: Upload rom to GD or SF ")
+print ("4: Setup Build Environment")
 print ("99: exit the code ")
 print("==================================================")
 inp = int(input("Enter your choice :"))
@@ -62,15 +63,26 @@ elif inp == 1 :
 #2- sync the device trees 
 elif inp == 2 :
   print("==================================================") 
-  rdir_name = input("enter the name of working directory: ")
-  branch = input("Enter exact name of github branch: ")
-  print("==================================================")  
-  print()
-  sync.tree(branch,rdir_name)
-  print()
-  time.sleep(1)
-  code.home(rdir_name)
-
+  octa = input("Do you want to sync octavi trees and priavte repo? (Y or N): ")
+  if octa == "n" or octa == "N" :
+    opt = input("Do you want to sync new trees?(Y or N): ")
+    rdir_name = input("enter the name of working directory: ")
+    branch = input("Enter exact name of github branch: ")
+    print("==================================================")  
+    print()
+    sync.tree(opt,branch,rdir_name)
+    print()
+    time.sleep(1)
+    code.home(rdir_name)
+  elif octa == "y" or octa == "Y" : 
+    rdir_name = input("enter the name of working OctaviOS directory: ")
+    octavi.fix(rdir_name)  
+    time.sleep(1)
+    code.home(rdir_name)   
+  else :
+    print("wrong choice ")
+    code.loop()
+           
 #3- uploading the rom     
 elif inp == 3 :
   print ("------------------------------------------------")
@@ -111,6 +123,19 @@ elif inp == 3 :
     up.sf(rdir_name,name,proj)
     code.loop()
     
+# Build Environment 
+elif inp == 4 :
+  print("-----------------------------------------------------------------------------")
+  print(" This script will set your build environment for newly made server or terminal ")
+  print(" All the dependencies and files will be downloaded automatically ")
+  print("==================================================")
+  inp = input("Press Y to proceed or N to return: ")
+  print("==================================================")
+    if inp == 'y' or inp == "y" :
+      os.system("./env.sh")
+    elif inp == 'n' or inp == 'N' :
+      code.loop()            
+        
 # Exit
 elif inp == 99 :
   code.exit()
@@ -118,4 +143,4 @@ elif inp == 99 :
 # Wrong_Input
 else :
   print("---------------WRONG INPUT------------------")
-  code.loop()
+  code.loop()  
