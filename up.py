@@ -21,9 +21,8 @@ def gd (rdir_name,name):
     print("││││││││││││││││││││"),
     print("---------------------------------file uploaded------------------------------------"),
     print("exiting now ......"),
-    time.sleep(1),
-    exit())
- 
+    time.sleep(1))
+     
  
 def sf (rdir_name,name,proj):
   return(
@@ -42,5 +41,4 @@ def sf (rdir_name,name,proj):
     print("││││││││││││││││││││"),
     print("---------------------------------file uploaded------------------------------------"),
     print("exiting now ......"),
-    time.sleep(1),
-    exit())
+    time.sleep(1))
