@@ -8,7 +8,7 @@ def loop () :
     print(),
     print(),
     print("------------------Returning to main menue------------------------"),
-    os.system("python3 go.py"))
+    os.system("cd build* && python3 go.py"))
     
 def exit () :
   return(  
