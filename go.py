@@ -77,14 +77,14 @@ elif inp == 2 :
     print("---------------------- %s seconds -------------------------" % (time.time() - start_time))
     print()
     time.sleep(1)
-    code.home(rdir_name)
+    code.loop()
   elif octa == "y" or octa == "Y" : 
     rdir_name = input("enter the name of working OctaviOS directory: ")
     start_time = time.time()
     octavi.fix(rdir_name)  
     print("---------------------- %s seconds -------------------------" % (time.time() - start_time))
     time.sleep(1)
-    code.home(rdir_name)   
+    code.loop()
   else :
     print("wrong choice ")
     code.loop()
