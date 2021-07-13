@@ -12,6 +12,9 @@ No more time wasting for typing those commands .
 So to make this script is compatible with your environment , you just need to edit one file .  
 > Open "vars.py" using any text editor and then fill all the variables according to your environment .
 > Few will be alredy done by me for reference, so you can just remove them and replace them with yours .
+  
+## Changelog:
+> Added elapsed time feauture.
 
 ## Installation and Running 
 
@@ -22,7 +25,7 @@ cd && git clone https://github.com/dhimanparas20/buildbot-2.0.git
 ```
 
 ```sh
-cd buildbot* && chmod +x *  && clear && ls
+cd buildbot* && chmod +x *  && cd && clear 
 ```
 
 ```sh
