@@ -11,6 +11,7 @@ No more time wasting for typing those commands .
 ## Files to edit 
 So to make this script is compatible with your environment , you just need to edit one file .  
 > Open "vars.py" using any text editor and then fill all the variables according to your environment .
+  
 > Few will be alredy done by me for reference, so you can just remove them and replace them with yours .
   
 ## Changelog:
