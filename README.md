@@ -25,7 +25,7 @@ cd && git clone https://github.com/dhimanparas20/buildbot-2.0.git
 ```
 
 ```sh
-wget https://raw.githubusercontent.com/dhimanparas20/buildbot-2.0/main/run.sh
+wget https://raw.githubusercontent.com/dhimanparas20/buildbot-2.0/main/run.sh && chmod +X run.sh
 ```
 
 ```sh
