@@ -141,12 +141,12 @@ elif inp == 4 :
   print("==================================================")
   inp = input("Press Y to proceed or N to return: ")
   print("==================================================")
-    if inp == 'y' or inp == "y" :
-      start_time = time.time()
-      os.system("./env.sh")
-      print("---------------- %s seconds -------------------" % (time.time() - start_time))
-    elif inp == 'n' or inp == 'N' :
-      code.loop()            
+  if inp == 'y' or inp == "y" :
+    start_time = time.time()
+    os.system("./env.sh")
+    print("---------------- %s seconds -------------------" % (time.time() - start_time))
+  elif inp == 'n' or inp == 'N' :
+    code.loop()            
         
 # Exit
 elif inp == 99 :
