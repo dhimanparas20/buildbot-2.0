@@ -15,6 +15,7 @@ So to make this script is compatible with your environment , you just need to ed
   
 ## Changelog:
 > Added elapsed time feauture.
+> Script can be even run from the main (home) directory by typing " ./r* " .
 
 ## Installation and Running 
 
