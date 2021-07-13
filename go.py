@@ -5,8 +5,6 @@ import up
 import code
 import vars
 
-
-os.system("clear")
 print("#-----------------------------------------------------------------------------------------#")
 print("#-----------------------------------------------------------------------------------------#")
 print("#-----------------------------------------------------------------------------------------#")
@@ -41,9 +39,11 @@ time.sleep(1)
 #0- saving credentials
 if inp == 0 :
   print("-----------------------------------------------")
+  start_time = time.time()
   os.system("git config --global credential.helper store")
   print()
   print("-----------------WORK DONE---------------------")
+  print("-------- %s seconds --------" % (time.time() - start_time))
   time.sleep(1)
   code.loop()
 
@@ -54,7 +54,9 @@ elif inp == 1 :
   rdir_name = input("enter the name of new directory : ")
   print("==================================================")
   print()
+  start_time = time.time()
   sync.repo(choice,rdir_name)
+  print("-------- %s seconds --------" % (time.time() - start_time))
   print()
   time.sleep(1)
   code.loop()
@@ -70,13 +72,17 @@ elif inp == 2 :
     branch = input("Enter exact name of github branch: ")
     print("==================================================")  
     print()
+    start_time = time.time()
     sync.tree(opt,branch,rdir_name)
+    print("---------------------- %s seconds -------------------------" % (time.time() - start_time))
     print()
     time.sleep(1)
     code.home(rdir_name)
   elif octa == "y" or octa == "Y" : 
     rdir_name = input("enter the name of working OctaviOS directory: ")
+    start_time = time.time()
     octavi.fix(rdir_name)  
+    print("---------------------- %s seconds -------------------------" % (time.time() - start_time))
     time.sleep(1)
     code.home(rdir_name)   
   else :
@@ -105,7 +111,9 @@ elif inp == 3 :
     print("-----------------------------------------------------------------------------")
     name = input("Enter the name of file: ")
     os.system("clear")
+    start_time = time.time()
     up.gd(rdir_name,name)
+    print("---------------------------- %s seconds -------------------------------" % (time.time() - start_time))
     code.loop()
     
   elif cho == 2 :
@@ -120,7 +128,9 @@ elif inp == 3 :
     proj = input("Enter the name of project (without first slash) and location: ")
     print("-----------------------------------------------------------------------------")
     os.system("clear")
+    start_time = time.time()
     up.sf(rdir_name,name,proj)
+    print("---------------- %s seconds -------------------" % (time.time() - start_time))
     code.loop()
     
 # Build Environment 
@@ -132,7 +142,9 @@ elif inp == 4 :
   inp = input("Press Y to proceed or N to return: ")
   print("==================================================")
     if inp == 'y' or inp == "y" :
+      start_time = time.time()
       os.system("./env.sh")
+      print("---------------- %s seconds -------------------" % (time.time() - start_time))
     elif inp == 'n' or inp == 'N' :
       code.loop()            
         
