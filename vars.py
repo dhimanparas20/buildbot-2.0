@@ -1,6 +1,6 @@
 # place all your variables here 
 # This is the only file you need to edit 
-# if you dont want to edit this you can also run "python3 entvar.py" to add variables by script
+# Branch for DT will be asked when syncing and for others keep the branch default
 
 import os
 import time
