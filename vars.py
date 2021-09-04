@@ -4,6 +4,7 @@
 
 import os
 import time
+import code
 
 # Name of server
 SERVER_NAME = "mst"
@@ -26,9 +27,8 @@ ROM_LINK4 = "repo init -u https://github.com/Octavi-OS/platform_manifest.git -b 
 
 # Links for the trees 
 # Branch will be automatically asked evertime inside script so no need to worry
-DT = "https://github.com/dhimanparas20/device-asus-X00TD.git" # device tree
-OCDT = "https://github.com/dhimanparas20/device_asus_sdm660-common.git"  # keep empty if you dont have any commmon tree
-NCDT = "https://github.com/dhimanparas20/cdt.git"
+DT = "git@github.com:dhimanparas20/device_asus_X00TD.git" # device tree
+CDT = "https://github.com/dhimanparas20/device_asus_sdm660-common.git"  # keep empty if you dont have any commmon tree
 VT = "https://github.com/dhimanparas20/vendor-asus.git"  # vendor tree
 KT = "https://github.com/dotOS-Devices/kernel_asus_X00TD.git"  # kernel tree
 
@@ -48,5 +48,5 @@ RC = "gd:" # needed to upload to google drive using rclone
 OUT = "out/target/product/X00TD"  # where the rom zip is placed after rom getting compiled sucessfully
 
 # DO NOT EDIT AFTER THIS 
-print("==================================|SAVING GITHUB INFO|=====================================")
+print(code.GREEN+"==================================|SAVING GITHUB INFO|====================================="+code.END)
 os.system ("git config --global user.email \"" +EMAIL+ "\" && git config --global user.name \"" +USER_NAME+ "\"")

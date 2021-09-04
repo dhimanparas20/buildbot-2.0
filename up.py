@@ -4,12 +4,13 @@
 import os
 import time
 import vars
+import code
 
 def gd (rdir_name,name):
   return(
-    print("--------------------------------uploading to Gdrive-----------------------------------------"),
+    print(code.RED+"--------------------------------uploading to Gdrive-----------------------------------------"+code.END),
     os.system("cd && cd "+rdir_name+" && cd " +vars.OUT+ " && rclone sync "+name+ " " +vars.RC),
-    print("││"),
+    print(code.GREEN+"││"),
     print("││││"),
     print("││││││"),
     print("││││││││"),
@@ -19,17 +20,17 @@ def gd (rdir_name,name):
     print("││││││││││││││││"),
     print("││││││││││││││││││"),
     print("││││││││││││││││││││"),
-    print("---------------------------------file uploaded------------------------------------"),
-    print("exiting now ......"),
+    print(code.RED+"---------------------------------file uploaded------------------------------------"),
+    print(code.CYAN+"exiting now ......"),
     time.sleep(1))
      
  
 def sf (rdir_name,name,proj):
   return(
-    print("--------------------------------uploading to SF-----------------------------------------"),
+    print(code.RED+"--------------------------------uploading to SF-----------------------------------------"),
     print(),
     os.system("cd && cd "+rdir_name+" && cd "+vars.OUT+" &&ls &&  scp "+name+" "+vars.SF+proj ),
-    print("││"),
+    print(code.GREEN+"││"),
     print("││││"),
     print("││││││"),
     print("││││││││"),
@@ -39,6 +40,6 @@ def sf (rdir_name,name,proj):
     print("││││││││││││││││"),
     print("││││││││││││││││││"),
     print("││││││││││││││││││││"),
-    print("---------------------------------file uploaded------------------------------------"),
-    print("exiting now ......"),
+    print(code.RED+"---------------------------------file uploaded------------------------------------"),
+    print(code.CYAN+"exiting now ......"),
     time.sleep(1))
