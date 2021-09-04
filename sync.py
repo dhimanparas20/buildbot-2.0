@@ -64,11 +64,11 @@ def repo (inp,rdir):
 def tree (b,rdir):
   return(
     print(code.CYAN+"/////////////////////////////===CLONING TREES===////////////////////////////////////"+code.END),
-    os.system(code.YELLOW+"cd && cd " + rdir + " && git clone " +vars.KT+ " " +vars.P_KT+code.END),
+    os.system("cd && cd " + rdir + " && git clone " +vars.KT+ " " +vars.P_KT+code.END),
     print(code.RED+"--------------------------------------------------------------------------------------"), 
-    os.system(code.YELLOW+"cd && cd " + rdir + " && git clone " +vars.VT+ " " +vars.P_VT),
+    os.system("cd && cd " + rdir + " && git clone " +vars.VT+ " " +vars.P_VT),
     print(code.RED+"--------------------------------------------------------------------------------------"),
-    os.system(code.YELLOW+"cd && cd " + rdir + " && git clone " +vars.CDT+ " " +vars.P_CDT),
+    os.system("cd && cd " + rdir + " && git clone " +vars.CDT+ " " +vars.P_CDT),
     print(code.RED+"--------------------------------------------------------------------------------------"),
-    os.system(code.YELLOW+"cd && cd " + rdir + " && git clone " +vars.DT+ " -b " +b+ " " +vars.P_DT),
+    os.system("cd && cd " + rdir + " && git clone " +vars.DT+ " -b " +b+ " " +vars.P_DT),
     print(code.RED+"------------------------------------------------------------------------------------------------"))
