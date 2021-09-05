@@ -15,6 +15,10 @@ So to make this script is compatible with your environment , you just need to ed
 > Few will be alredy done by me for reference, so you can just remove them and replace them with yours .
   
 ## Changelog:
+> Added Support To Generate SSH Key For Github to sync Private repos .
+  
+> Added color codes for Beautification.  
+  
 > Added elapsed time feauture.
   
 > Script can be even run from the main (home) directory by typing " ./r* " .
